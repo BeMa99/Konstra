@@ -6,7 +6,7 @@ if (!isset($_POST['Submit']))
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$query = "INSERT INTO suggestions (fname, email, message) VALUES ('$fname','$email','$message')";
-	if (mysqli_query($conn, $query)){echo "Message Inserted Successfully!";}
+	if (mysqli_query($conn, $query)){echo "Message Inserted Successfully!"; echo $_SERVER[HTTP_REFERER];}
 	else{echo "Error: " . $sql . ":-" . mysqli_error($conn);}
 	mysqli_close($conn);
 }

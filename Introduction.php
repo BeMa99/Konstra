@@ -101,6 +101,8 @@ Main Campus Nairobi.
 <div id = "form-test" class = "row-md-6" style = "padding-bottom:50px; margin-top:50px; background-color:#3C1321; color:#ffde22; box-shadow:inset 2px -2px 2px, inset -2px 2px 2px ;">
 <form method = "post" action = "modified.php">
 <p style = "margin:30px">Send your suggestions about me please!</p></br>
+
+<input type="hidden" name="destination" value="<?php echo $_SERVER["REQUEST_URI"]; ?>"/>
 <input type = "text" size = "40" name = "fname" value = "" placeholder = "Enter Name" style = "margin-top:30px; margin-bottom:15px;" required/></br>
 <input type = "text" size = "40" name = "email" placeholder = "Email e.g johndoe@gmail.com" style = "margin-top:15px; margin-bottom:15px;" required/></br>
 <input type = "text" size = "100" name = "message" placeholder = "Enter message. not more than 100 characters" style = "margin-top:15px; margin-bottom:30px;" required/></br>
