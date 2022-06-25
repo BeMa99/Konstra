@@ -93,7 +93,7 @@ Kenyatta University,
 Main Campus Nairobi.
 </p>
 
-<a href="Berclay Manani CV.docx" download rel="Berclay CV" target="_blank" class="btn btn-primary" style = "margin:30px; background-color:#ffde22; color:#3C1321; border-color:#3C1321;">
+<a href="BerclayMananiCV.docx" download rel="Berclay CV" target="_blank" class="btn btn-primary" style = "margin:30px; background-color:#ffde22; color:#3C1321; border-color:#3C1321;">
    Download CV
 </a>
 </br>
