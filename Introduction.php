@@ -1,3 +1,16 @@
+<?php
+session_start();
+//if user not logged in, redirect to login page
+if(!isset($_SESSION['loggedin']))
+{
+    header('Location: login.php');
+    exit;
+}
+else
+{
+    echo 'Welcome '.$_SESSION['useremail'].'!';
+}
+?>
 <html>
 <head>
 <title>About Me</title>
@@ -87,7 +100,7 @@ o	To grow in problem solving skills and acquire knowledge to advance current tec
 
 <h2>References</h2>
 <p style= "margin-left:30px; margin-right:30px; ">
-Eng. Arthur Agwayo
+Eng. Arthur Ogwayo
 H.O.D Electrical and Electronics engineering department,
 Kenyatta University,
 Main Campus Nairobi.
