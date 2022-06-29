@@ -14,7 +14,7 @@
 <div class = "row-md-6" id = "CV" style = "padding-bottom:50px;margin-bottom:50px; background-color:##ffde22; color:#3C1321; box-shadow:inset -2px 2px 2px, inset 2px -2px 2px;">
 <form method = "post" action = "modified2.php">
 <p style = "margin:30px"><b>Please fill in all items</b></p></br>
-<input type="hidden" name="destination2" value="<?php echo $_SERVER["REQUEST_URI"]; ?>"/>
+<input type="hidden" value="<?php echo $_SERVER["REQUEST_URI"]; ?>"/>
 <input type = "text" size = "40" name = "fname" value = "" placeholder = "Enter First Name" style = "margin-top:30px; margin-bottom:15px;" required/></br>
 <input type = "text" size = "40" name = "lname" value = "" placeholder = "Enter Last Name" style = "margin-top:30px; margin-bottom:15px;" required/></br>
 <input type = "text" size = "40" name = "email" placeholder = "Email e.g johndoe@gmail.com" style = "margin-top:15px; margin-bottom:15px;" required/></br>

@@ -22,6 +22,9 @@ else
 <div class = "container" id = "overall_back" style = "background-color:#ffde22; color:#3C1321; ">
 <div class = "column" id = "column_overall">
 <div class = "row-md-6" style = "padding-bottom:50px;margin-bottom:50px; background-color:#3C1321; color:#ffde22; box-shadow:inset -2px 2px 2px, inset 2px -2px 2px;">
+<a href="logout.php" class="btn btn-primary" style = "align: right; margin:30px; background-color:#ffde22; color:#3C1321; border-color:#3C1321;">
+   LOGOUT
+</a>
 <h2>ABOUT ME</h2>
 <h3>A brief introduction before the CV</h3>
 </div>

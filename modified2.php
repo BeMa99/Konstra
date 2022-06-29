@@ -9,7 +9,17 @@ if (!isset($_POST['Submit']))
 	$password = $_POST['password'];
 	//$password = password_hash($password, PASSWORD_DEFAULT);
 	$query = "INSERT INTO users (fname, lname, email, phoneNum, password) VALUES ('$fname','$lname','$email','$phoneNum','$password')";
-	if (mysqli_query($conn, $query)){echo "User Signup Successfully!";}
+	if (mysqli_query($conn, $query))
+	{
+	    echo "User Signup Successfully!";
+	    //create sessions
+        session_regenerate_id();
+        $_SESSION['loggedin'] = TRUE;
+        $_SESSION['useremail'] = $_POST['email'];
+        $_SESSION['id'] = $id;
+        header('Location: Introduction.php');
+
+	}
 	else{echo "Error: " . $sql . ":-" . mysqli_error($conn);}
 
 	if(isset($_REQUEST["destination2"]))
