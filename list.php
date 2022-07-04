@@ -17,6 +17,13 @@ $mysqli->close();
 <div class = "container" id = "overall_back" style = "background-color:#ffde22; color:#3C1321; ">
 <div class = "column" id = "column_overall">
 
+<div class = "row-md-6" style = "background-color:##ffde22; color:#3C1321;">
+<form action = "search.php" method = "POST" class = "form-inline">
+<input name = "keyword" type = "text" placeholder = "Enter search word here..." class = "form-control" value = "<?php echo isset($_POST['keyword'])?$_POST['keyword']:''?>"/>
+<inline class = "input-group-button"><button class = "btn btn-primary" name = "search">SEARCH</span></button></inline>
+</form>
+</div>
+
 <div class = "row-md-6" style = "padding-bottom:50px;margin-bottom:50px; background-color:#3C1321; color:#ffde22; box-shadow:inset -2px 2px 2px, inset 2px -2px 2px;">
 <h2>List of all items in the table</h2>
 </div>
@@ -36,6 +43,11 @@ $mysqli->close();
 <?php }?>
 </table>
 </div>
+<script src = "bootstrap-5.0.0-beta3-dist/js/bootstrap.js"></script>
+<script src = "bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+<script src = "jquery/jquery-3.6.0.min.js"></script>
+<script src = "jquery/jquery-3.6.0.slim.min.js"></script>
+
 </body>
 
 </html>

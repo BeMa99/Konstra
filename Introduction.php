@@ -3,8 +3,8 @@ session_start();
 //if user not logged in, redirect to login page
 if(!isset($_SESSION['loggedin']))
 {
-    header('Location: login.php');
-    exit;
+    //header('Location: login.php');
+    //exit;
 }
 else
 {
