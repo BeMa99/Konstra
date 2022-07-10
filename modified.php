@@ -19,5 +19,3 @@ if (!isset($_POST['Submit']))
 	mysqli_close($conn);
 }
 ?>
-</body>
-</html>

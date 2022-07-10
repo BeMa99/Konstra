@@ -20,6 +20,11 @@
 <input type = "submit" value = "Submit" style = "background-color:#3C1321; color:#ffde22;">
 </form>
 
+<div class = "row-md-6" style = "padding-bottom:50px;margin-bottom:50px; background-color:#3C1321; color:#ffde22; box-shadow:inset -2px 2px 2px, inset 2px -2px 2px;">
+<p>Or Sign-Up Here if you don't have an account</p></br>
+<a href="signup.php" class="btn btn-primary" style = "align: right; margin:30px; background-color:#ffde22; color:#3C1321; border-color:#3C1321;">
+   Sign-Up
+</a>
 </div>
 </div>
 </body>

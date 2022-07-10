@@ -17,12 +17,12 @@ if($stmt = $conn->prepare('SELECT id, password FROM users WHERE email = ?'))
         //if(password_verify($_POST['password'], $password))//when password hash is used
         if($_POST['password'] === $password)
         {
-            //create sessions
-            session_regenerate_id();
+            session_start();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['useremail'] = $_POST['email'];
             $_SESSION['id'] = $id;
-            echo 'Welcome '.$_SESSION['useremail'].'!';//header('Location: Introduction.php');
+            echo "<script> alert(\"Welcome\"); window.location.href = \"Introduction.php\"; </script>";
+
         }
         else
         {

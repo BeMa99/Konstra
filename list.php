@@ -17,7 +17,7 @@ $mysqli->close();
 <div class = "container" id = "overall_back" style = "background-color:#ffde22; color:#3C1321; ">
 <div class = "column" id = "column_overall">
 
-<div class = "row-md-6" style = "background-color:##ffde22; color:#3C1321;">
+<div class = "row-md-6" style = "background-color:#ffde22; color:#3C1321;">
 <form action = "search.php" method = "POST" class = "form-inline">
 <input name = "keyword" type = "text" placeholder = "Enter search word here..." class = "form-control" value = "<?php echo isset($_POST['keyword'])?$_POST['keyword']:''?>"/>
 <inline class = "input-group-button"><button class = "btn btn-primary" name = "search">SEARCH</span></button></inline>
@@ -37,8 +37,8 @@ $mysqli->close();
 <td style="text-align:center; padding-right:20px;"><?php echo $rows['fname'];?></td>
 <td style="text-align:center; padding-right:20px;"><?php echo $rows['email'];?></td>
 <td style="text-align:center; padding-right:20px;"><?php echo $rows['message'];?></td>
-<td style="text-align:center; padding-right:20px;"><a href = "Delete.php?del = <?php echo $rows['email']?>">Delete</a></td>
-<td style="text-align:center; padding-right:20px;"><a href = "edit.php?edit = <?php echo $rows['email']?>">Edit</a></td>
+<td style="text-align:center; padding-right:20px;"><a href = "Delete.php?del = <?php echo $rows['id']?>">Delete</a></td>
+<td style="text-align:center; padding-right:20px;"><a href = "edit.php?edit = <?php echo $rows['id']?>">Edit</a></td>
 </tr>
 <?php }?>
 </table>

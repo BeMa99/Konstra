@@ -1,15 +1,9 @@
 <?php
 session_start();
 //if user not logged in, redirect to login page
-if(!isset($_SESSION['loggedin']))
-{
-    //header('Location: login.php');
-    //exit;
-}
-else
+if($_SESSION['loggedin'])
 {
     echo 'Welcome '.$_SESSION['useremail'].'!';
-}
 ?>
 <html>
 <head>
@@ -129,3 +123,9 @@ Main Campus Nairobi.
 </div>
 </body>
 </html>
+<?php
+}else{
+    header('Location: login.php');
+    exit;
+}
+?>

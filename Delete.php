@@ -1,10 +1,11 @@
 <?php 
-include_once 'connect.php';
-$email = isset($_GET['email'])?$_GET['email']:'';
-$sql = "DELETE FROM suggestions WHERE email='berclaym@gmail.com'";
+include 'connect.php';
+$id = isset($_GET['id'])?$_GET['id']:'';
+$sql = "DELETE FROM suggestions WHERE id = '$id'";
 if($conn->query($sql) === True)
 {
 	echo "Comment Deleted successfully!";
+	echo "<script> window.location.href = \"list.php\"; </script>";
 }
 else
 {
